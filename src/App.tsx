@@ -1570,7 +1570,7 @@ export default function App() {
                 <label className="block font-bold text-slate-700 mb-1">رقم الإجابة الصحيحة</label>
                 <select
                   value={newQuestion.correct}
-                  onChange={(e) => setNewQuestion({ ...newQuestion, correct: e.target.value })}
+                  onChange={(e) => setNewQuestion({ ...newQuestion, Number(e.target.value) })}
                   className="w-full p-2.5 bg-slate-50 border rounded-xl"
                 >
                   <option value={0}>الخيار الأول</option>
